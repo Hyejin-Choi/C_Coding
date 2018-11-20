@@ -1,0 +1,80 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+int input(int change);
+int hangul(int change2);
+int main() {
+	char *num;
+	long change;
+	char *endptr;
+	num = (char *)malloc(500);
+	printf("16132816 최혜진\n\n");
+	printf("숫자를 입력하고 Enter>");
+	scanf("%s", num);
+	change = strtol(num, &endptr, 10);
+	input(change);
+	printf("\n");
+	hangul(num);
+	printf("\n");
+	return 0;
+}
+int input(int change) {
+	int i;
+	char arr[1000];
+	itoa(change, arr, 10);
+	for (i = 0; i<strlen(arr); i++) {
+
+
+		if ((strlen(arr) - i) % 3 == 0 && i != 0)
+			printf(",%c", arr[i]);
+
+		else
+			printf("%c", arr[i]);
+	}
+
+}
+int hangul(int digit) {
+	char *digit1[] = { "영", "일", "이", "삼", "사", "오", "육", "칠", "팔", "구" };
+	char *shorter[] = { " ", "십", "백", "천" };
+	char *major[] = { " ", "만", "억" };
+	char *p, *q;
+	int i, j, k;
+
+	i = strlen(digit) % 4 -1;
+
+	j = strlen(digit) / 4;
+
+	p = digit;
+
+	while (j >= 0) {
+
+		for (; i >= 0; i--) {
+
+			k = *p - '0';
+
+			if (k != 0) {        
+				if (k != 1)
+
+					printf("%s", digit1[k]);
+				if (i)
+					printf("%s", shorter[i]);
+				
+			}
+
+			++p;
+
+
+		}
+
+		if (j>0)
+
+			printf("%s", major[j]);
+
+		i = 3;
+
+		--j;
+
+		
+	}
+
+}
