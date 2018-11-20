@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+int main() {
+	int j, k, m = 0, sum = 1;
+	int histo[101] = { 0 };
+	srand((unsigned int)time(NULL));
+
+	for (j = 0; j <= 99; j++)
+	{
+		m = rand() % 100 + 1;
+		printf("%3d ", m);
+		histo[m]++;
+		if (j%10==9)
+			printf("\n");
+
+	}
+	for (k = 1; k <= 100; k++)
+	{
+		
+		
+
+		if (histo[k] >= 1)
+
+		{
+			printf("\n중복으로 생성된 난수 : %2d   얼마나 중복 되었나요? %d번 ", k, histo[k]);
+		
+
+
+		}
+	}
+}
