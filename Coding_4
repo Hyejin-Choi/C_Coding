@@ -1,0 +1,45 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+int lotto(int b[])
+{
+   int i, j;
+   for (i = 0; i < 5; i++) {
+      for (j = 1 + i; j < 6 ; j++) {
+
+         while (b[i] == b[j]) {
+            b[j] = rand() % 45 + 1;
+            
+         }
+
+      }
+
+   }
+
+   for (i = 0; i < 6; i++)
+      return b[i];
+
+}
+
+int main()
+{
+   int n, i, j, a[6] = { 0 };
+   srand((unsigned int)time(NULL));
+   printf("로또 번호 생성\n");
+   printf("출력할 로또번호 set의 수를 입력하고 Enter>");
+   scanf("%d", &n);
+
+   for (i = 1; i <= n; i++) {
+      for (j = 0; j < 6; j++) {
+         a[j] = rand() % 45 + 1;
+
+      }
+
+      lotto(a);
+      printf("set %2d : %2d %2d %2d %2d %2d %2d\n", i, a[0], a[1], a[2], a[3], a[4], a[5]);
+
+   }
+
+
+   return 0;
+}
