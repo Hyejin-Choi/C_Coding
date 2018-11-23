@@ -62,7 +62,6 @@ int hangul(int digit) {
 
 			++p;
 
-
 		}
 
 		if (j>0)
