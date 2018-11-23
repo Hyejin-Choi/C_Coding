@@ -8,7 +8,6 @@ int main() {
 	long change;
 	char *endptr;
 	num = (char *)malloc(500);
-	printf("16132816 최혜진\n\n");
 	printf("숫자를 입력하고 Enter>");
 	scanf("%s", num);
 	change = strtol(num, &endptr, 10);
