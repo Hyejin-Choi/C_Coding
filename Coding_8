@@ -1,0 +1,67 @@
+#include<stdio.h>
+#include<windows.h>
+int mul(int a[3][3], int b[3][3]);
+int arr(int a[3][3]);
+
+int main() {
+	int i,j;
+	int c[3][3];
+	int d[3][3];
+	
+	
+	printf("첫번째 행렬 정의하기\n");
+		for (i = 0; i < 3; i++)
+		{
+			printf("%d 행: \n", i + 1);
+			for (j = 0; j < 3; j++)
+			{
+				scanf("%d", &c[i][j]);
+			}
+		}
+	
+		printf("첫번째 행렬 : \n");
+		arr(c);
+
+		printf("두번째 행렬 정의하기\n");
+			for (i = 0; i < 3; i++)
+			{
+				printf("%d 행: \n", i + 1);
+				for (j = 0; j < 3; j++)
+				{
+					scanf("%d", &d[i][j]);
+				}
+			}
+		
+		printf("두번째 행렬 : \n");
+		arr(d);
+		printf("첫번째 행렬과 두번째 행렬의 곱셈결과 :\n");
+		mul(c, d);
+
+
+}
+int arr(int a[3][3]) {
+	int i, j;
+
+	for (i = 0; i < 3; i++)
+	{
+		for (j = 0; j < 3; j++)
+		{
+			printf("%3d", a[i][j]);
+		}
+		printf("\n");
+	}printf("\n");
+}
+int mul(int a[3][3], int b[3][3]) {
+	int c[3][3];
+	int i, j;
+
+	for (i = 0; i<3; i++)
+	{
+		for (j = 0; j<3; j++)
+		{
+			c[i][j] = a[i][0] * b[0][j] + a[i][1] * b[1][j] + a[i][2] * b[2][j];
+		}
+	}
+
+	arr(c);
+}
