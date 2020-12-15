@@ -34,7 +34,7 @@ C와 이용해 1학기 동안 만든 프로그램입니다.
 
 **프로그램 설계** 
 
-특정 단어를 미리 입력한 뒤, swith case 문을 이용하여 영어단어를 맞추면 승리도록 설계
+특정 단어를 미리 입력한 뒤, swith case 문을 이용하여 영어단어를 맞추면 승리하도록 설계
 
 ![행맨1](https://user-images.githubusercontent.com/45071833/102227179-9ec8c200-3f2c-11eb-9d9b-4bf36cfe5143.JPG)![행맨2](https://user-images.githubusercontent.com/45071833/102227189-a25c4900-3f2c-11eb-9846-d3e62e95527a.JPG)
 
