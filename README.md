@@ -4,4 +4,4 @@ C와 이용해 1학기 동안 만든 프로그램입니다.
 
 ## 최종 기말 프로젝트
 **주제명** :공학도를 위한 공학용계산기
-(https://user-images.githubusercontent.com/45071833/102221639-b81a4000-3f25-11eb-8ba8-4bcada3498ba.JPG)
+![계산기1](https://user-images.githubusercontent.com/45071833/102221639-b81a4000-3f25-11eb-8ba8-4bcada3498ba.JPG)
