@@ -51,6 +51,14 @@ C와 이용해 1학기 동안 만든 프로그램입니다.
 
 ![숫자야구2](https://user-images.githubusercontent.com/45071833/102228436-0d5a4f80-3f2e-11eb-83df-3d2fdc85fa0d.JPG)
 
+### **주제명** : 8x8 위치이동 미니게임
 
+
+**프로그램 설계** 
+
+8X8 행렬을 토대로 awsd를 이용해 조작키를 설정해 목표점을 찾는 미니게임을 설계하였습니다. 프로그램의 자세한 설명은 main함수의 주석처리를 통해 확인할 수 있습니다.
+
+![미니게임1](https://user-images.githubusercontent.com/45071833/102352155-d5fda880-3fea-11eb-8a56-51e737312be6.JPG)
+![미니게임2](https://user-images.githubusercontent.com/45071833/102352166-d7c76c00-3fea-11eb-93af-7f6baf2a6f82.JPG)
 
 
